@@ -11,27 +11,35 @@
   --btn-cl: #188ce8;
   --whiteF-cl: #ffffff;
   --btnbc: #f5f4fa;
-  --bcteam: #F5F4FA;
+  --bcteam: #f5f4fa;
+  --backgroundteam: #f5f4fa;
+  --border-team: rgba(0, 0, 0, 0.25);
 }
 body {
   font-family: var(--roboto-font);
   color: var(--brand-color);
   background: var(--white-cl);
 }
-.header{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-container {
   display: flex;
-  border-bottom: 1px solid #ECECEC;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
 }
 .container {
-  /* display: flex;
-  align-items: center; */
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 /*Header*/
 .logo {
@@ -48,15 +56,15 @@ body {
 .studio {
   color: var(--black-cl);
 }
-.navigation{
+.navigation {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.list-navigation{
+
+.list-navigation {
   display: flex;
-  
 }
-.item-navigation{
+.item-navigation {
   margin-right: 50px;
 }
 .link-navigation {
@@ -75,13 +83,13 @@ body {
 .link-navigation:focus {
   color: var(--logo-cl);
 }
-.contacts{
+.contacts {
   display: flex;
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.contacts-mail{
+.contacts-mail {
   margin-right: 50px;
 }
 
@@ -115,10 +123,8 @@ body {
 
 /* Особенности*/
 .home {
-  display: b;
   background: var(--bc-footcl);
-  /* width: 1600px;
-  height: 600px; */
+  height: 600px;
 }
 .home-title {
   width: 650px;
@@ -127,6 +133,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--white-cl);
+  margin-top: 0;
   margin-left: auto;
   margin-bottom: 30px;
   margin-right: auto;
@@ -151,11 +158,21 @@ body {
   color: var(--whiteF-cl);
   background: var(--btn-cl);
 }
-.list-specifics{
+.list-specifics {
   display: flex;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 0;
 }
-.item-specifics{
+
+.item-specifics {
   margin-right: 30px;
+}
+.item-specifics:last-child {
+  margin-right: 0;
 }
 .specifics-title {
   font-weight: 700;
@@ -163,6 +180,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .specifics-text {
   font-size: 14px;
@@ -170,37 +188,59 @@ body {
   letter-spacing: 0.03em;
   color: var(--grey-cl);
 }
-.title-work{
+.title-work {
   text-align: center;
+  margin-top: 0;
+  padding-bottom: 50px;
 }
-.list-work{
+.list-work {
   display: flex;
+  padding-bottom: 94px;
 }
-.item-work{
+.item-work {
   margin-right: 30px;
+}
+.item-work:last-child {
+  margin-right: 0;
 }
 /*Наша команда*/
-.team{
-  border-color: var(--bcteam);
+.team {
+  background-color: var(--bcteam);
 }
-.title-team{
+.title-team {
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
-.list-team{
+.list-team {
   display: flex;
+  padding-bottom: 94px;
 }
-.item-team{
+.item-team {
   margin-right: 30px;
+  background-color: var(--white-cl);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px var(--border-team);
+}
+.item-team:last-child {
+  margin-right: 0;
+}
+.img-team {
+  margin-bottom: 30px;
 }
 .team-name-title {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
+  margin-bottom: 10px;
 }
 .team-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   color: var(--grey-cl);
+  padding-bottom: 30px;
 }
 /* Подвал*/
 .webstudio-footer {
@@ -211,6 +251,10 @@ body {
 }
 .footer-container {
   background-color: var(--black-cl);
+}
+.foot-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .country {
   font-weight: 400;
@@ -240,6 +284,10 @@ body {
   color: var(--whiteF-cl);
   background-color: var(--logo-cl);
 }
+.list-portfolio-btn {
+  display: flex;
+  align-items: center;
+}
 .menu-btn:hover,
 .menu-btn:focus {
   background: var(--logo-cl);
@@ -256,6 +304,10 @@ body {
   background: var(--btnbc);
 }
 /*Project*/
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .title-project {
   font-weight: 700;
   font-size: 18px;
@@ -279,6 +331,9 @@ body {
 .list-portfolio-btn,
 .project-list {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 .dec {
   text-decoration: none;
