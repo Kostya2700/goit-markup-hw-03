@@ -13,6 +13,7 @@
   --btnbc: #f5f4fa;
   --bcteam: #f5f4fa;
   --backgroundteam: #f5f4fa;
+  --color-line:#C4C4C4;
   --border-team: rgba(0, 0, 0, 0.25);
 }
 body {
@@ -41,7 +42,7 @@ p {
   margin: 0 auto;
   /* outline: 1px solid red; */
 }
-/*Header*/
+/*Хедер*/
 .logo {
   font-family: var(--logo-font);
   font-size: 26px;
@@ -121,7 +122,7 @@ p {
   color: var(--logo-cl);
 }
 
-/* Особенности*/
+/* Особливості*/
 .home {
   background: var(--bc-footcl);
   height: 600px;
@@ -162,7 +163,7 @@ p {
   display: flex;
   align-items: center;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   width: 1170px;
   margin: 0 auto;
   padding-left: 0;
@@ -188,6 +189,16 @@ p {
   letter-spacing: 0.03em;
   color: var(--grey-cl);
 }
+/* Лінія */
+.line{
+  width: 1170px;
+  height: 9px;
+  border: none;
+  background-color: var(--color-line);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+/* Чим ми займаємось */
 .title-work {
   text-align: center;
   margin-top: 0;
@@ -242,19 +253,25 @@ p {
   color: var(--grey-cl);
   padding-bottom: 30px;
 }
-/* Подвал*/
+/* Підвал*/
 .webstudio-footer {
   color: var(--logo-cl);
+  padding-bottom: 20px;
 }
 .studio-footer {
   color: var(--white-cl);
 }
 .footer-container {
   background-color: var(--black-cl);
-}
-.foot-container {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-adress{
+
+}
+.adress-list{
+  padding-top: 20px;
+  
 }
 .country {
   font-weight: 400;
@@ -279,7 +296,11 @@ p {
 .tel-footer:focus {
   color: var(--logo-cl);
 }
-/*Porfolio*/
+.item-footer{
+  margin-bottom: 9px;
+}
+/*Портфоліо*/
+/* Кнопки */
 .section-portfolio .menu-btn.active {
   color: var(--whiteF-cl);
   background-color: var(--logo-cl);
@@ -287,6 +308,9 @@ p {
 .list-portfolio-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .menu-btn:hover,
 .menu-btn:focus {
@@ -302,11 +326,30 @@ p {
   border-radius: 4px;
   cursor: pointer;
   background: var(--btnbc);
+  padding: 6px 22px;
 }
-/*Project*/
+.item-btn {
+  margin-right: 8px;
+}
+/*Проекти*/
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc(100% / 3);
+  padding-bottom: 94px;
+}
+.project{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project:nth-child(3n){
+  margin-right: 0;
+}
+.project:nth-last-child(-n+3){
+margin-bottom: 0;
+}
+.img-porfolio{
+  margin-bottom: 20px;
 }
 .title-project {
   font-weight: 700;
@@ -314,6 +357,7 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-color);
+  margin-bottom: 4px;
 }
 .project-text {
   font-size: 16px;
@@ -321,13 +365,13 @@ p {
   letter-spacing: 0.03em;
   color: var(--grey-cl);
 }
-
+/* Декорація */
 .list-navigation,
 .contacts,
 .list-specifics,
 .list-work,
 .list-team,
-.adress-ft,
+.adress-list,
 .list-portfolio-btn,
 .project-list {
   list-style-type: none;
