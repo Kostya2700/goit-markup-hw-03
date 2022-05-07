@@ -16,6 +16,7 @@
   --color-line:#C4C4C4;
   --border-team: rgba(0, 0, 0, 0.25);
   --border-project: #EEEEEE;
+  --border-header: #ECECEC;
   --card-prf: 30px;
 }
 body {
@@ -49,6 +50,9 @@ img{
   /* outline: 1px solid red; */
 }
 /*Хедер*/
+.header{
+  border-bottom: 1px solid var(--border-header) ;
+}
 .logo {
   font-family: var(--logo-font);
   font-size: 26px;
@@ -70,6 +74,7 @@ img{
 
 .list-navigation {
   display: flex;
+  align-items: center;
 }
 .item-navigation {
   margin-right: 50px;
@@ -395,6 +400,7 @@ margin-bottom: 0;
 }
 .dec {
   text-decoration: none;
+  padding: 20px 0;
 }
 .card-thumb{
   /* outline: 1px solid red; */
