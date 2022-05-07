@@ -190,6 +190,7 @@ img{
 }
 
 .item-specifics {
+  max-width: 270px;
   margin-right: 30px;
 }
 .item-specifics:last-child {
