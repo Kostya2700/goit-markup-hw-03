@@ -359,7 +359,9 @@ img{
   /* margin-right: 30px;
   margin-bottom: 30px; */
   /* outline: 1px solid red; */
-  outline: 1px solid var(--border-project);
+  /* outline: 1px solid var(--border-project); */
+  width: 370px;
+  border: 1px solid var(--border-project) ;
 }
 /* .project:nth-child(3n){
   margin-right: 0;
